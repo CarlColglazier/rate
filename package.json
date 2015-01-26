@@ -1,0 +1,23 @@
+{
+  "name": "rate",
+  "version": "0.0.0",
+  "description": "A rating system library.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node tests/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CarlColglazier/rate"
+  },
+  "keywords": [
+    "elo",
+    "rating"
+  ],
+  "author": "Carl Colglazier <carl@carlcolglazier.com> (http://carlcolglazier.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CarlColglazier/rate/issues"
+  },
+  "homepage": "https://github.com/CarlColglazier/rate"
+}
