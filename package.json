@@ -1,6 +1,6 @@
 {
   "name": "rate",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A rating system library.",
   "main": "index.js",
   "scripts": {
