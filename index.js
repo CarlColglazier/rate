@@ -1,5 +1,7 @@
-var elo = require('./lib/elo.js')
+var elo = require("./lib/elo.js"),
+    groupElo = require("./lib/groupelo.js");
 
 module.exports = {
-    elo: elo
+    elo: elo,
+    groupElo: groupElo
 }
