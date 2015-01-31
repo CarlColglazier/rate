@@ -1,0 +1,108 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'adduser' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.35
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 warn Username must be lowercase
+6 verbose adduser before first PUT { name: 'carlcolglazier',
+6 verbose adduser   password: 'XXXXX',
+6 verbose adduser   email: 'carl@carlcolglazier.com',
+6 verbose adduser   _id: 'org.couchdb.user:carlcolglazier',
+6 verbose adduser   type: 'user',
+6 verbose adduser   roles: [],
+6 verbose adduser   date: '2015-01-31T18:03:46.109Z' }
+7 verbose request where is /-/user/org.couchdb.user:carlcolglazier
+8 verbose request registry https://registry.npmjs.org/
+9 verbose request id 1eb9086815a894a6
+10 verbose url raw /-/user/org.couchdb.user:carlcolglazier
+11 verbose url resolving [ 'https://registry.npmjs.org/',
+11 verbose url resolving   './-/user/org.couchdb.user:carlcolglazier' ]
+12 verbose url resolved https://registry.npmjs.org/-/user/org.couchdb.user:carlcolglazier
+13 verbose request where is https://registry.npmjs.org/-/user/org.couchdb.user:carlcolglazier
+14 info trying registry request attempt 1 at 13:03:46
+15 http PUT https://registry.npmjs.org/-/user/org.couchdb.user:carlcolglazier
+16 http 409 https://registry.npmjs.org/-/user/org.couchdb.user:carlcolglazier
+17 verbose headers { date: 'Sat, 31 Jan 2015 18:03:47 GMT',
+17 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+17 verbose headers   'content-type': 'application/json',
+17 verbose headers   'cache-control': 'max-age=60',
+17 verbose headers   'content-length': '58',
+17 verbose headers   'accept-ranges': 'bytes',
+17 verbose headers   via: '1.1 varnish',
+17 verbose headers   'x-served-by': 'cache-iad2145-IAD',
+17 verbose headers   'x-cache': 'MISS',
+17 verbose headers   'x-cache-hits': '0',
+17 verbose headers   'x-timer': 'S1422727427.658586,VS0,VE315',
+17 verbose headers   'keep-alive': 'timeout=10, max=50',
+17 verbose headers   connection: 'Keep-Alive' }
+18 verbose adduser update existing user
+19 verbose request where is /-/user/org.couchdb.user:carlcolglazier?write=true
+20 verbose request registry https://registry.npmjs.org/
+21 verbose url raw /-/user/org.couchdb.user:carlcolglazier?write=true
+22 verbose url resolving [ 'https://registry.npmjs.org/',
+22 verbose url resolving   './-/user/org.couchdb.user:carlcolglazier?write=true' ]
+23 verbose url resolved https://registry.npmjs.org/-/user/org.couchdb.user:carlcolglazier?write=true
+24 verbose request where is https://registry.npmjs.org/-/user/org.couchdb.user:carlcolglazier?write=true
+25 info trying registry request attempt 1 at 13:03:47
+26 http GET https://registry.npmjs.org/-/user/org.couchdb.user:carlcolglazier?write=true
+27 http 200 https://registry.npmjs.org/-/user/org.couchdb.user:carlcolglazier?write=true
+28 verbose adduser userobj { name: 'carlcolglazier',
+28 verbose adduser   password: 'XXXXX',
+28 verbose adduser   email: 'carl@carlcolglazier.com',
+28 verbose adduser   _id: 'org.couchdb.user:carlcolglazier',
+28 verbose adduser   type: 'user',
+28 verbose adduser   roles: [],
+28 verbose adduser   date: '2015-01-31T18:03:46.109Z' }
+29 verbose request where is /-/user/org.couchdb.user:carlcolglazier/-rev/3-c346a398665bf575ca459e9fda15e818
+30 verbose request registry https://registry.npmjs.org/
+31 verbose url raw /-/user/org.couchdb.user:carlcolglazier/-rev/3-c346a398665bf575ca459e9fda15e818
+32 verbose url resolving [ 'https://registry.npmjs.org/',
+32 verbose url resolving   './-/user/org.couchdb.user:carlcolglazier/-rev/3-c346a398665bf575ca459e9fda15e818' ]
+33 verbose url resolved https://registry.npmjs.org/-/user/org.couchdb.user:carlcolglazier/-rev/3-c346a398665bf575ca459e9fda15e818
+34 verbose request where is https://registry.npmjs.org/-/user/org.couchdb.user:carlcolglazier/-rev/3-c346a398665bf575ca459e9fda15e818
+35 info trying registry request attempt 1 at 13:03:47
+36 http PUT https://registry.npmjs.org/-/user/org.couchdb.user:carlcolglazier/-rev/3-c346a398665bf575ca459e9fda15e818
+37 http 401 https://registry.npmjs.org/-/user/org.couchdb.user:carlcolglazier/-rev/3-c346a398665bf575ca459e9fda15e818
+38 verbose headers { date: 'Sat, 31 Jan 2015 18:03:49 GMT',
+38 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+38 verbose headers   'content-type': 'application/json',
+38 verbose headers   'cache-control': 'max-age=60',
+38 verbose headers   'content-length': '67',
+38 verbose headers   'accept-ranges': 'bytes',
+38 verbose headers   via: '1.1 varnish',
+38 verbose headers   'x-served-by': 'cache-iad2131-IAD',
+38 verbose headers   'x-cache': 'MISS',
+38 verbose headers   'x-cache-hits': '0',
+38 verbose headers   'x-timer': 'S1422727428.775970,VS0,VE314',
+38 verbose headers   'keep-alive': 'timeout=10, max=50',
+38 verbose headers   connection: 'Keep-Alive' }
+39 verbose adduser back [ [Error: unauthorized Name or password is incorrect.: -/user/org.couchdb.user:carlcolglazier/-rev/3-c346a398665bf575ca459e9fda15e818],
+39 verbose adduser   { error: 'unauthorized',
+39 verbose adduser     reason: 'Name or password is incorrect.' },
+39 verbose adduser   '{"error":"unauthorized","reason":"Name or password is incorrect."}' ]
+40 warn adduser Incorrect username or password
+40 warn adduser You can reset your account by visiting:
+40 warn adduser
+40 warn adduser     https://npmjs.org/forgot
+41 error Error: unauthorized Name or password is incorrect.: -/user/org.couchdb.user:carlcolglazier/-rev/3-c346a398665bf575ca459e9fda15e818
+41 error     at RegClient.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:308:14)
+41 error     at Request._callback (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:246:65)
+41 error     at Request.self.callback (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:236:22)
+41 error     at Request.emit (events.js:98:17)
+41 error     at Request.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1142:14)
+41 error     at Request.emit (events.js:117:20)
+41 error     at IncomingMessage.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1096:12)
+41 error     at IncomingMessage.emit (events.js:117:20)
+41 error     at _stream_readable.js:944:16
+41 error     at process._tickCallback (node.js:442:13)
+42 error If you need help, you may report this *entire* log,
+42 error including the npm and node versions, at:
+42 error     <http://github.com/npm/npm/issues>
+43 error System Windows_NT 5.1.2600
+44 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "adduser"
+45 error cwd C:\Documents and Settings\Christian\My Documents\rate
+46 error node -v v0.10.35
+47 error npm -v 1.4.28
+48 verbose exit [ 1, true ]
